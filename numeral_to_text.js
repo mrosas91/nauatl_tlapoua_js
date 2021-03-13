@@ -37,7 +37,6 @@ function n_to_text(numeral, first_time) {
   }
 	else if (numeral < 400) {
     times_in_20 = Math.floor(numeral / 20);
-		console.log(times_in_20);
     return possible_connector + prefixes[times_in_20] + root_20 + n_to_text(numeral - (times_in_20 * 20), false);
   }
   // # elif numeral < 8000 :
